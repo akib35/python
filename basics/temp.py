@@ -6,5 +6,5 @@ try:
     txt = open(filename)
     print(f"Here is your file {filename}'s content\n", txt.read())
 
-except ValueError | UnicodeDecodeError:
-    exit(1)
+except ValueError | FileNotFoundError:
+   exit(1)
