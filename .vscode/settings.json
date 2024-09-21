@@ -1,5 +1,6 @@
 {
 	"python.analysis.autoImportCompletions": true,
 	"mojo.modularHomePath": "/home/akib35/.modular",
-	"editor.defaultFormatter": null
+    "editor.defaultFormatter": null,
+
 }

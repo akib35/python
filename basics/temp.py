@@ -1,10 +1,6 @@
-from sys import argv
+import sys
 
-try:
-    script, filename = argv
-
-    txt = open(filename)
-    print(f"Here is your file {filename}'s content\n", txt.read())
-
-except ValueError | FileNotFoundError:
-   exit(1)
+mygenerator = (i for i in range(10000000) if i % 2 == 0)
+print(sys.getsizeof((mygenerator)))
+mylist = [i for i in range(10000000) if i % 2 == 0]
+print(sys.getsizeof(mylist))
